@@ -1,0 +1,13 @@
+<%- contentFor('body') %>
+  <div class="jumbotron text-center">
+     <h1>Users List</h1>
+     <div class="row">
+     	<% for (user of users){%>
+     	  <div class="col-sm-4">
+               <h2>Name: <%= user.name %></h2>
+               <h2>createdAt: <%= user.createdAt %></h2>
+               <h2>updatedAt: <%= user.updatedAt %></h2>
+     	  </div>
+     	<% } %>
+     </div>
+  </div>

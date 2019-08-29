@@ -1,0 +1,12 @@
+<%- contentFor('body') %>
+  <div class="jumbotron text-center">
+     <h1>Messages List</h1>
+     <div class="row">
+     	<% for (m of messages){%>
+     	  <div class="col-sm-4">
+               <h2>title: <%= m.title %></h2>
+               <h2>content: <%= m.content %></h2>
+     	  </div>
+     	<% } %>
+     </div>
+  </div>
